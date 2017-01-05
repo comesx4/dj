@@ -1,0 +1,35 @@
+﻿<UserControl x:Class="ModulusFE.Demo.KlineChartWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:chartx="clr-namespace:ModulusFE;assembly=ModulusFE.StockChartX"
+        mc:Ignorable="d"
+        d:DesignHeight="600" d:DesignWidth="800">
+    <Grid Background="Black">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <chartx:StockChartX x:Name="KlineChart" Loaded="KlineChart_Loaded" />
+        <StackPanel Orientation="Horizontal" Grid.Row="1">
+            <Button Content="MACD" Click="MACD_Click"/>
+            <Button Content="KDJ" Click="KDJ_Click"/>
+            <Button Content="RSI" Click="RSI_Click"/>
+            <Button Content="BOLL" Click="BOLL_Click"/>
+            <Button Content="WR" Click="WR_Click"/>
+            <Button Content="BIAS" Click="BIAS_Click"/>
+            <Button Content="ASI" Click="ASI_Click"/>
+            <Button Content="VR" Click="VR_Click"/>
+            <Button Content="ARBR" Click="ARBR_Click"/>
+            <Button Content="DPO" Click="DPO_Click"/>
+            <Button Content="TRIX" Click="TRIX_Click"/>
+            <Button Content="DMA" Click="DMA_Click"/>
+            <Button Content="BBI" Click="BBI_Click"/>
+            <Button Content="MTM" Click="MTM_Click"/>
+            <Button Content="OBV" Click="OBV_Click_15"/>
+            <Button Content="Change InfoPanel Items Orientation" Click="Button_Click"/>
+        </StackPanel>
+
+    </Grid>
+</UserControl>
